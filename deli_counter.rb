@@ -5,8 +5,8 @@ def line(katz_deli)
     line = "The line is currently:"
     
     #alternative solution using .each.with_index
-    #katz_deli.each.with_index(1) do |name, number|
-    #line += " #{number}. #{name}"
+    #katz_deli.each_with_index do |name, number|
+    #line += " #{number + 1}. #{name}"
     
     i = 0 
     while i < katz_deli.length 
