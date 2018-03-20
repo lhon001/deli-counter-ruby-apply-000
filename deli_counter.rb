@@ -17,9 +17,9 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli, num)
+  katz_deli.push(num)
+  puts "You are number #{katz_deli.length} in line."
 end
 
 def now_serving(katz_deli)
@@ -29,4 +29,8 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
+end
+
+def time_stamp(time_hash, num)
+  time_hash[num] = Time.now
 end
